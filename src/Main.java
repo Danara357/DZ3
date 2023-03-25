@@ -1,22 +1,16 @@
 public class Main {
     public static void main(String[] args) {
-        task2();
+        task5();
     }
-    public static void task2 () {
-        System.out.println("Задача 2");
-        float catYellow = 27.12f;
-        System.out.println(catYellow);
-        long catRed = 987678965549L;
-        System.out.println(catRed);
-        float dogYellow = 2.786f;
-        System.out.println(dogYellow);
-        short catBlue = 569;
-        System.out.println(catBlue);
-        short dogBlue = -159;
-        System.out.println(dogBlue);
-        short gerlBlue = 27897;
-        System.out.println(gerlBlue);
-        byte catWhite = 67;
-        System.out.println(catWhite);
+    public static void task5 () {
+        System.out.println("Задача 5");
+        byte paintTotal = 120;
+        byte whitePaintClass = 2;
+        byte brownPaintClass = 4;
+        int oneClassPainte = whitePaintClass + brownPaintClass;
+        int classTotal = paintTotal/oneClassPainte;
+        int whitePaintTotal = classTotal * whitePaintClass;
+        int brownPaintTotal = classTotal * brownPaintClass;
+        System.out.println("В школе, где " + classTotal + " классов, нужно " + whitePaintTotal + " банок белой краски и " + brownPaintTotal + " банок коричневой краски.");
     }
 }
