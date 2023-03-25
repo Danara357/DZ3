@@ -1,22 +1,20 @@
 public class Main {
     public static void main(String[] args) {
-        task2();
+        task7();
     }
-    public static void task2 () {
-        System.out.println("Задача 2");
-        float catYellow = 27.12f;
-        System.out.println(catYellow);
-        long catRed = 987678965549L;
-        System.out.println(catRed);
-        float dogYellow = 2.786f;
-        System.out.println(dogYellow);
-        short catBlue = 569;
-        System.out.println(catBlue);
-        short dogBlue = -159;
-        System.out.println(dogBlue);
-        short gerlBlue = 27897;
-        System.out.println(gerlBlue);
-        byte catWhite = 67;
-        System.out.println(catWhite);
+    public static void task7 () {
+        System.out.println("Задача 7");
+        byte needResetKg = 7;
+        int needResetGramm = needResetKg * 1000;
+        short loseWeightMinimum = 250;
+        short loseWeightMaximum = 500;
+        int loseWeight = loseWeightMinimum + loseWeightMaximum;
+        int loseWeightMedium = loseWeight / 2;
+        int dayLoseWeightMinimum = needResetGramm / loseWeightMinimum;
+        System.out.println(dayLoseWeightMinimum + " дней уйдет на похудение, если спортсмен будет терять каждый день по " +  loseWeightMinimum + " грамм.");
+        int dayLoseWeightMaximum = needResetGramm / loseWeightMaximum;
+        System.out.println(dayLoseWeightMaximum + " дней уйдет на похудение, если спортсмен будет терять каждый день по " +  loseWeightMaximum + " грамм.");
+        int dayLoseWeightMedium = needResetGramm / loseWeightMedium;
+        System.out.println("Потребуется в среднем " + dayLoseWeightMedium + " дней, чтобы добиться требуемого результата похудения.");
     }
 }
