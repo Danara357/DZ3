@@ -1,22 +1,26 @@
 public class Main {
     public static void main(String[] args) {
-        task2();
+        task6();
     }
-    public static void task2 () {
-        System.out.println("Задача 2");
-        float catYellow = 27.12f;
-        System.out.println(catYellow);
-        long catRed = 987678965549L;
-        System.out.println(catRed);
-        float dogYellow = 2.786f;
-        System.out.println(dogYellow);
-        short catBlue = 569;
-        System.out.println(catBlue);
-        short dogBlue = -159;
-        System.out.println(dogBlue);
-        short gerlBlue = 27897;
-        System.out.println(gerlBlue);
-        byte catWhite = 67;
-        System.out.println(catWhite);
+    public static void task6 () {
+        System.out.println("Задача 6");
+        byte banana = 5;
+        byte bananaWeight = 80;
+        int allBananasWeight = banana * bananaWeight;
+        short milkTotal = 200;
+        byte milkPortion = 100;
+        byte milkWeightPortion = 105;
+        int amountMilkPortion = milkTotal / milkPortion;
+        int allMilkWeight = amountMilkPortion * milkWeightPortion;
+        byte iceCream = 2;
+        byte iceCreamWeight = 100;
+        int allIceCreamWeight = iceCream * iceCreamWeight;
+        byte egg = 4;
+        byte eggWeight = 70;
+        int allEggWeight = egg * eggWeight;
+        int sportsBreakfastWeight = allBananasWeight + allMilkWeight + allIceCreamWeight + allEggWeight;
+        System.out.println("Вес спортзавтрака " + sportsBreakfastWeight + " грамм.");
+        float sportsBreakfastWeightKilogram =  sportsBreakfastWeight / 1000f;
+        System.out.println("Вес спортзавтрака " + sportsBreakfastWeightKilogram + " килограмм.");
     }
 }
